@@ -1,0 +1,28 @@
+import java.util.*;
+class string
+{public static void main(String args[])
+{int n,i,j,l,l1;
+String s;
+System.out.println("enter string");
+Scanner sc=new Scanner(System.in);
+s=sc.nextLine();
+String s1;
+System.out.println("enter string to be found");
+s1=sc.next();
+l=s.length();
+l1=s1.length();
+int p;
+n=0;
+int count=0;
+while(n<=l-1)
+{p=s.indexOf(s1,n);
+if(p>=0)
+{count++;
+n=p+l1;
+}
+else
+    break;
+}
+System.out.println(+count);
+}
+}
